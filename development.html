@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vector Visualizer - Home</title>
+    <link rel="icon" type="image/png" href="http://www.faviconer.com/uploads/200/896/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900,900italic,500,400italic,700italic,700,500italic,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body onload="main()">
+    <div class="wrapper">
+        <div class="main">
+            <div class="nav">
+                <div class="container">
+                    <a href="index.html" class="nav-logo"><p>V&#178;</p></a>
+                    <div class="nav-list">
+                        <a href="index.html" class="nav-item"><p>Home</p></a>
+                        <a href="about.html" class="nav-item"><p>About</p></a>
+                        <a href="media.html" class="nav-item"><p>Media</p></a>
+                        <a href="resources.html" class="nav-item"><p>Resources</p></a>
+                        <a href="development.html" class="nav-item active"><p>Development</p></a>
+                        <a href="http://vector-visualizer-icohedron.c9.io/" class="nav-item webapp-link"><p>Open Web App</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <h2>The development of <span style="font-style: italic;">Vector Visualizer</span> is separated into three parts: Proposal, Design, and Development & Testing.</h2>
+                    <div class="tri-1">
+                        <h3>Proposal</h3>
+                        <h4>1. The Problem</h4>
+                        <p>Vector math problems involving basic linear algebra. Vectors, matrices, and the possibility for quaternions as well.</p>
+                        <h4>2. Purpose</h4>
+                        <p>It can be used to educate people of some concepts behind linear algebra. It can be used to investigate how many graphics programs use vector math to make things move on screen. Since it is also a full vector math library, it can be used for making games and other projects that involve vector math.</p>
+                        <h4>3. Audience</h4>
+                        <p>Adults and students alike. (And some really intelligent children too!)</p>
+                        <h4>4. Tools</h4>
+                        <p>HTML/CSS/Javascript.</p>
+                        <h4>5. Deliverables</h4>
+                        <p>Open source (Javascript) and internal documentation to go along with it.</p>
+                        <h4>6. Timeline</h4>
+                        <table>
+                            <tr>
+                                <th>Date</th>
+                                <th>Deliverable</th>
+                                <th>Details</th>
+                            </tr>
+                            <tr>
+                                <td>May 21</td>
+                                <td>Project Proposal</td>
+                                <td>Initial plan for the project</td>
+                            </tr>
+                            <tr>
+                                <td>May 22</td>
+                                <td>Project Design</td>
+                                <td>Code structuring and interface design</td>
+                            </tr>
+                            <tr>
+                                <td>May 29</td>
+                                <td>Alpha</td>
+                                <td>Should have all basic functions finished. May not have a user interface implemented yet.</td>
+                            </tr>
+                            <tr>
+                                <td>June 5</td>
+                                <td>Beta</td>
+                                <td>Should have a working user interface.</td>
+                            </tr>
+                            <tr>
+                                <td>June 9</td>
+                                <td>Final</td>
+                                <td>Should be completely finished. May add in some extra features like audio.</td>
+                            </tr>
+                            <tr>
+                                <td>June 12</td>
+                                <td>Documentation complete</td>
+                                <td>Documentation for the vector-math library should be complete.</td>
+                            </tr>
+                            <tr>
+                                <td>June 15/16</td>
+                                <td>Presentations</td>
+                                <td>The website should be polished and ready for presenting.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tri-2">
+                        <h3>Design</h3>
+                        <h4>Environment</h4>
+                        <p>The environment will have a basic grid floor, have a mesh loaded in the center, and an easy-to-use interface for interacting with the mesh.</p>
+                        <h4>Gameplay</h4>
+                        <p>Although it is not a game, it still has first-person movement for flying around. This will allow users to see their manipulated mesh from any angle.</p>
+                        <h4>Art</h4>
+                        <p>The look and feel will be minimalistic. The design of the mesh itself will be, by default, simple as well. Of course, the mesh will be modifiable through the interface and .obj files will also be able to be loaded.</p>
+                        <h4>Sound and Music</h4>
+                        <p>There may be some ambient music playing in the background. It will have its own audio controller.</p>
+                        <h4>User Interface, Controls</h4>
+                        <p>The controls will be simple WASD, shift, and space movement. The user interface will be simple and easy to use HTML elements.</p>
+                    </div>
+                    <div class="tri-3">
+                        <h3>Development & Testing</h3>
+                        <h4>Development</h4>
+                        <table>
+                            <tr>
+                                <th>Date</th>
+                                <th>Notes</th>
+                            </tr>
+                            <tr>
+                                <td>May 21</td>
+                                <td>Project Proposal</td>
+                            </tr>
+                            <tr>
+                                <td>May 22</td>
+                                <td>Project Design</td>
+                            </tr>
+                            <tr>
+                                <td>May 25</td>
+                                <td>Finished the basic vector-math library</td>
+                            </tr>
+                            <tr>
+                                <td>May 27</td>
+                                <td>WebGL completely set up</td>
+                            </tr>
+                            <tr>
+                                <td>May 28</td>
+                                <td>
+                                    <ul>
+                                        <li>Set up mesh framework and transformation handling</li>
+                                        <li>A basic mesh was able to load in the scene</li>
+                                        <li>Added proper projection that is easily scalable to any monitor size</li>
+                                        <li>Added a grid floor</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>May 29</td>
+                                <td>
+                                    <ul>
+                                        <li>Added a camera</li>
+                                        <li>Basic input for movement</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>June 1</td>
+                                <td>
+                                    <ul>
+                                        <li>Finished camera movement</li>
+                                        <li>Creation of meshes on the fly through the console</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>June 2</td>
+                                <td>Started on the GUI</td>
+                            </tr>
+                            <tr>
+                                <td>June 3</td>
+                                <td>
+                                    <ul>
+                                        <li>Added text areas for vertices and indices</li>
+                                        <li>Added placeholder text for transformations</li>
+                                        <li>Nearly complete mesh creation from the GUI</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>June 4</td>
+                                <td>
+                                    <ul>
+                                        <li>Finished mesh creation through the GUI</li>
+                                        <li>Finished transformations through the GUI</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>June 5</td>
+                                <td>
+                                    <ul>
+                                        <li>Fixed a bug with the scaling</li>
+                                        <li>Added a music controller</li>
+                                        <li>Added some black outlines for mesh edges</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>June 8</td>
+                                <td>
+                                    <ul>
+                                        <li>Removed the black outlines on mesh edges</li>
+                                        <li>Added obj file support. Drag and drop-style uploading</li>
+                                        <li>Added a notifier in the top right about obj file support</li>
+                                        <li>Fixed input lag</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>June 9</td>
+                                <td>
+                                    <ul>
+                                        <li>Added music to the music controller</li>
+                                        <li>Finished. A total of 1049 lines of code.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <h4>Testing</h4>
+                        <table>
+                            <tr>
+                                <th>Date</th>
+                                <th>Testing Type</th>
+                                <th>What was tested</th>
+                                <th>Results</th>
+                                <th>Changes to be made</th>
+                            </tr>
+                            <tr>
+                                <td>May 29</td>
+                                <td>Alpha</td>
+                                <td>Grid rendering.<br>
+                                Mesh rendering.<br>
+                                Mesh creation through the console.<br>
+                                Movement.</td>
+                                <td>Grid and mesh rendering success.<br>
+                                Creation of a mesh through the console is successful, but requires persistent rendering.<br>
+                                There is limited, but functional "movement" through the console.</td>
+                                <td>Addition of a way to peristently render meshes created on-the-fly.<Br>
+                                    Addition of keyboard and mouse input for movement.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>June 1</td>
+                                <td>Alpha</td>
+                                <td>Mesh creation though the console.<br>
+                                Movement.</td>
+                                <td>Perfected mesh creation through the console.<br>
+                                Very smooth movement, but keys need to be pressed a couple times before they actually work.</td>
+                                <td>Input lag will be dealt with.<br>
+                                Should have obj file support.</td>
+                            </tr>
+                            <tr>
+                                <td>June 4</td>
+                                <td>Alpha</td>
+                                <td>Mesh creation with GUI.<br>
+                                Transformations of the mesh with the GUI.</td>
+                                <td>Both were a complete success, except for the scaling which seems to not work. Every other transformation works.</td>
+                                <td>Scaling needs to be fixed.</td>
+                            </tr>
+                            <tr>
+                                <td>June 5</td>
+                                <td>Beta</td>
+                                <td>Everything.</td>
+                                <td>Everything works as expected.</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>June 8</td>
+                                <td>Final</td>
+                                <td>obj file support</td>
+                                <td>Works flawlessly</td>
+                                <td>None</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p id="copyright">Copyright © 2015 Deric C. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
